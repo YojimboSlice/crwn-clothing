@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 import Navigation from './components/routes/navigation/navigation.component';
-import SignIn from './components/routes/sign-in/sign-in.component';
+import Authentication from './components/routes/authentication/authentication.component';
 import Home from './components/routes/home/home.component';
 import './categories.styles.scss';
 
@@ -24,8 +24,8 @@ const App = () => {
           element={<Shop />}
         />
         <Route
-          path='sign-in'
-          element={<SignIn />}
+          path='auth'
+          element={<Authentication />}
         />
       </Route>
     </Routes>
